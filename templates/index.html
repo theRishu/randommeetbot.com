@@ -1,0 +1,97 @@
+{% extends 'base.html' %}
+
+{% block title %}RandomMeetBot Anonymous chatting bot {% endblock %}
+{% block content %}
+
+
+    <!-- Hero Section -->
+    <section class="bg-purple text-white py-20">
+        <div class="container mx-auto px-4 flex flex-col items-center">
+            <img  src="{{ url_for('static', filename='images/randommeet.png') }}"  alt="RandomMeetBot " class="w-40 h-40 rounded-full mb-8 animate-pulse">
+            <h1 class="text-4xl md:text-6xl font-bold text-center mb-4">Meet New People Anonymously 🎭</h1>
+            <p class="text-lg md:text-xl text-gray-400 text-center max-w-md mb-8">Find new friends, a soulmate, or just chat with someone 😍</p>
+            <a href="https://t.me/RandomMeetBot" class="btn-start inline-block mt-4 bg-indigo-700 hover:bg-indigo-800 transition duration-300 py-2 px-6 rounded-full text-lg font-bold">Join now!</a>
+            <p class="text-sm text-gray-400 mt-2">To use this bot, you need Telegram installed.</p>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="bg-gray-900 py-20">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-100 mb-4">Features</h2>
+                <p class="text-lg text-gray-400">Discover what our chat bot offers:</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Feature Cards -->
+                <div class="flex flex-col items-center p-6">
+                    <span class="text-5xl mb-4">🔒</span>
+                    <h3 class="text-xl mb-2 font-bold">Secure Messaging</h3>
+                    <p class="text-gray-400">Enjoy end-to-end encryption for secure messaging.</p>
+                </div>
+                <div class="flex flex-col items-center p-6">
+                    <span class="text-5xl mb-4">🎈</span>
+                    <h3 class="text-xl mb-2 font-bold">Easy to Use</h3>
+                    <p class="text-gray-400">Simple and intuitive interface for seamless chatting.</p>
+                </div>
+                <div class="flex flex-col items-center p-6">
+                    <span class="text-5xl mb-4">🌐</span>
+                    <h3 class="text-xl mb-2 font-bold">Global Reach</h3>
+                    <p class="text-gray-400">Connect with users from all around the world.</p>
+                </div>
+                <div class="flex flex-col items-center p-6">
+                    <span class="text-5xl mb-4">🎈</span>
+                    <h3 class="text-xl mb-2 font-bold">Chat Anonymously</h3>
+                    <p class="text-gray-400">Engage in conversations anonymously.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonial text-center bg-purple py-20">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-white mb-4">What Our Users Say</h2>
+            <div class="text-lg text-white">"RandomMeet has made it so easy for me to connect with new people from different parts of the world. I love the simplicity and security it offers!"</div>
+            <div class="mt-4 font-semibold">- John Doe</div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="bg-gray-800 text-white py-20">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Frequently Asked Questions</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- FAQ Items -->
+                <div class="faq-item">
+                    <h3 class="text-xl mb-2 font-bold">How do I start using RandomMeet?</h3>
+                    <p class="text-gray-400">Simply click on the "Join now!" button and follow the instructions to start using RandomMeet.</p>
+                </div>
+                <div class="faq-item">
+                    <h3 class="text-xl mb-2 font-bold">Is RandomMeet secure?</h3>
+                    <p class="text-gray-400">Yes, RandomMeet ensures end-to-end encryption for secure messaging.</p>
+                </div>
+                <div class="faq-item">
+                    <h3 class="text-xl mb-2 font-bold">Can I chat anonymously on RandomMeet?</h3>
+                    <p class="text-gray-400">Yes, RandomMeet allows you to engage in conversations anonymously.</p>
+                </div>
+                <div class="faq-item">
+                    <h3 class="text-xl mb-2 font-bold">Is RandomMeet available worldwide?</h3>
+                    <p class="text-gray-400">Yes, RandomMeet lets you connect with users from all around the world.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Note Section -->
+    <section class="bg-gray-900 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="note-container p-4 rounded-lg text-center">
+                <p class="note-text"><i class="fas fa-exclamation-circle mr-2 text-purple"></i><span class="font-semibold">Please note:</span> This bot is not for adult chat.</p>
+            </div>
+        </div>
+    </section>
+
+{% endblock %}
